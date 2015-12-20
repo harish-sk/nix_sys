@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
   }
   
   if((dp = opendir(argv[1])) == NULL) {
-    fprintf(stderr,"Error: Directory %s cannot be opened\n", argv[1]);
+    perror("Error opening file");
     exit(0);
   }
   
